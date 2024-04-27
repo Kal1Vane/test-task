@@ -2,6 +2,8 @@ import { Box } from '@mui/material';
 import { LeftSideSection } from '../LeftSideSection/LeftSideSection';
 import { RightSideSection } from '../RightSideSection/RightSideSection';
 import { FilterCurrency } from '../FilterСurrency/FilterCurrency';
+import { FilterCheckbox } from '../FilterCheckbox/FilterCheckbox';
+import { dataFilterCheckbox } from '../../../common/dataFilterCheckbox';
 
 export const MainContainer = () => {
   return (
@@ -9,6 +11,7 @@ export const MainContainer = () => {
       <Box sx={style.mainWrapper}>
         <LeftSideSection>
           <FilterCurrency />
+          <FilterCheckbox style={style.filterCheckbox} data={dataFilterCheckbox}/>
         </LeftSideSection>
         <RightSideSection>
           <>dsa</>
@@ -29,4 +32,7 @@ const style = {
     gap: { xs: '0px', lg: '96px', md: '0px' },
     display: 'flex',
   },
+  filterCheckbox : {
+    mt : '30px'
+  }
 };
