@@ -1,13 +1,14 @@
 import { Box } from '@mui/material';
 import { LeftSideSection } from '../LeftSideSection/LeftSideSection';
 import { RightSideSection } from '../RightSideSection/RightSideSection';
+import { FilterCurrency } from '../FilterСurrency/FilterCurrency';
 
 export const MainContainer = () => {
   return (
     <Box sx={style.mainContainer}>
       <Box sx={style.mainWrapper}>
         <LeftSideSection>
-          <>asd</>
+          <FilterCurrency />
         </LeftSideSection>
         <RightSideSection>
           <>dsa</>
